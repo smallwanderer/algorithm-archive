@@ -1,2 +1,24 @@
-# joooooon
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+## 📂 `problems/`
+
+이 폴더는 코딩 테스트 / 알고리즘 문제 풀이 코드를 모아두는 공간입니다.
+백준(BOJ), 프로그래머스(Programmers) 등을 플랫폼별·난이도별로 정리하는 것을 목표로 합니다.
+
+> ※ 이 디렉토리는 기존에 사용하던 별도 레포를 통합하여 관리하고 있습니다.
+> 
+>  백준/프로그래머스에서 해결한 문제를 자동으로 커밋해주는 [백준허브](https://github.com/BaekjoonHub)를 이용합니다.
+>  [smallwanderer-bjkhub](https://github.com/smallwanderer/smallwanderer-bkjhub) 레포지토리를 참고 바랍니다.
+---
+
+### 🗂 디렉토리 구조
+
+
+```text
+problems/
+├── 백준/
+|  ├── Bronze/      # 난이도
+|  |  ├── 1157. 단어공부      # [문제번호]. [문제이름]
+|  |  ├── ...
+|  ├── ...
+├── 프로그래머스/
+|  ├── 0/      # 난이도
+|  |  ├── 120804. 두 수의 곱 구하기      # [문제번호]. [문제이름]
