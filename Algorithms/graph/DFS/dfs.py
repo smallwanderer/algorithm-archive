@@ -40,3 +40,5 @@ if __name__ == "__main__":
     }
     dfs = Archive_DFS(start=0, graph=graph)
     print(dfs.search(5))  # 출력: True
+
+    print(dfs.search(6))  # 출력: False
