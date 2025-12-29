@@ -20,7 +20,7 @@ class Archive_BFS:
     # True if 찾았음 else False
     def search(self, end):
         graph = self.graph
-        visited = [False * len(graph)]
+        visited = [False] * len(graph)
         visited[self.start] = True
 
         queue = collections.deque([self.start])
@@ -37,3 +37,16 @@ class Archive_BFS:
                 queue.append(neighbor)
         
         return False 
+    
+# 사용 예시
+if __name__ == "__main__":
+    graph = {
+        0: [1, 2],
+        1: [0, 3, 4],
+        2: [0, 5],
+        3: [1],
+        4: [1, 5],
+        5: [2, 4]
+    }
+    bfs = Archive_BFS(start=0, graph=graph)
+    print(bfs.search(5))  # 출력: True
