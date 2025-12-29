@@ -1,33 +1,80 @@
 # Algorithm Archive
 
-알고리즘, 자료구조, 코딩테스트 문제 풀이를 정리하는 레포지토리입니다.  
-개념 정리부터 실제 문제 풀이, 실전용 템플릿까지 한 곳에서 관리하는 것을 목표로 합니다.
+알고리즘, 자료구조, 코딩테스트 문제 풀이를 정리하는 레포지토리입니다.
+각 알고리즘에 대한 자세한 설명은 Velog에 별도 정리되어 있습니다.
+이 레포의 목표는 알고리즘의 동작 과정과 결과를 직접 확인할 수 있도록 구조화하는 것입니다.
 
-## 📂 구조
+## 📂 Directory Structure
+```
+algorithm-archive/
+├── algorithms/               # 알고리즘 단위 학습 허브 (핵심)
+│   ├── searching/
+│   ├── sorting/
+│   ├── graph/
+│   ├── tree/
+│   ├── dp/
+│   ├── greedy/
+│   ├── data-structures/
+│   ├── string/
+│   ├── math/
+│   └── techniques/
+│
+│   └── 각 알고리즘 폴더 구조 예시:
+│       <category>/<algorithm>/
+│       ├── README.md    # 이론 요약 + 패턴 + 의사코드
+│       ├── impl/        # 구현 코드 (Python / C++ 등)
+│       └── tests/       # 알고리즘 검증용 테스트 코드
+│
+├── templates/           # 코딩테스트 실전용 템플릿 모음
+│   ├── python/
+│   └── cpp/
+│
+├── problems_raw/             # 플랫폼/번호 기반 원본 문제 풀이 아카이브
+│   ├── boj/
+│   ├── programmers/
+│   └── leetcode/
+│
+└── notes/                    # 개인 학습 기록 및 전략
+```
 
-- `docs/`  
-  - `data-structures/` : 배열, 리스트, 스택, 큐, 트리, 그래프 등 자료구조 정리  
-  - `algorithms/` : 정렬, 탐색, BFS/DFS, DP, 그리디 등 알고리즘 이론  
-  - `patterns/` : 투 포인터, 슬라이딩 윈도우, 백트래킹 등 문제 풀이 패턴  
-  - `cheatsheets/` : 시간 복잡도 표, 자주 쓰는 공식/팁
+## 🎯 Algorithm Structure
+✔ 알고리즘 단위 허브 구조
 
-- `problems/`  
-  - `boj/`, `programmers/`, `leetcode/` 등 플랫폼별 문제 풀이  
-  - 각 문제 폴더에 코드 + 간단한 풀이 아이디어/복잡도 정리
+각 알고리즘 폴더는 다음 형태를 가집니다:
 
-- `templates/`  
-  - Python / C++ 기반 BFS, DFS, 다익스트라, 유니온파인드, 세그먼트 트리 등 템플릿 코드
+```
+algorithms/<category>/<algorithm>/
+├── README.md     # 이론·개념·패턴
+└── impl/         # 구현 코드
+```
 
-- `notes/`  
-  - 코테 전략, 회고, 자주 틀리는 실수 정리 등 개인 학습 노트
+✔ 문제 풀이 아카이브는 별도 보관
 
-## 🎯 목표
+README에서 해당 알고리즘을 이용하는 문제를 확인할 수 있습니다.
+problems_raw/에는 원본 문제 풀이를 플랫폼 기준으로 그대로 보관합니다.
 
-1. 코딩테스트 준비 시 바로 참고할 수 있는 알고리즘/템플릿 아카이브 구축  
-2. 문제 풀이 히스토리를 체계적으로 남겨 복습과 회고에 활용  
-3. 면접/포트폴리오에서 “알고리즘 학습 과정”을 보여줄 수 있는 자료로 활용
 
-## 🛠 사용 언어
+## 📘 Categories
+Category	설명
+- searching	이분 탐색, 파라메트릭 서치 등
+- sorting	정렬 알고리즘
+- graph	BFS, DFS, Dijkstra, Floyd, MST 등
+- dp	동적 계획법
+- greedy	그리디 알고리즘
+- data-structures	스택, 큐, 힙, 유니온파인드, 트리 등
+- string	KMP, Trie, Rolling Hash
+- math	소수, 모듈러, 조합, GCD 등
+- techniques	슬라이딩 윈도우, 투 포인터, 분할정복
 
-- Python3
-- C/Java (추가 예정)
+## 🧭 Workflow (새 알고리즘 추가 방법)
+
+1. 알고리즘 선택
+2. 디렉토리 생성 ```algorithms/<category>/<algorithm>/{impl,tests}```
+3. README.md 작성
+4. 구현 코드 작성
+5. 관련 문제 링크 추가 (problems_raw/ 기준)
+6. 필요한 경우 templates 업데이트
+
+## 🚀 Goal
+
+알고리즘 정리용
