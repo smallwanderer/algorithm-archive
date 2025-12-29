@@ -21,6 +21,7 @@ class Archive_BFS:
     def search(self, end):
         graph = self.graph
         visited = [False * len(graph)]
+        visited[self.start] = True
 
         queue = collections.deque([self.start])
         while queue:
