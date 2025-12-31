@@ -27,8 +27,6 @@ class Archive_DFS:
                 stack.append(neighbor)
 
         return False
-    
-print("dfs.py loaded")
 
 # 사용 예시
 if __name__ == "__main__":
