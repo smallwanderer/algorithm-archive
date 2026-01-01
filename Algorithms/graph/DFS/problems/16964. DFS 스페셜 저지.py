@@ -17,6 +17,12 @@ def dfs_16964():
     answer = list(map(int, sys.stdin.readline().split()))
 
     traversal_order = []
+    """
+    # 모든 DFS 순회 경우의 수 열거
+    # 메모리 초과 사용
+
+    백트래킹을 이용하여 candidate별로 모든 DFS 순회의 경우의 수를 구한다. 
+    """
     def enumerate_dfs_traversal(graph, start=1):
         visited = [False] * (vertex_count + 1)
         traversal = [start]
