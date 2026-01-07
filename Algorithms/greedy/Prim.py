@@ -33,7 +33,7 @@ class GreedyPrim:
                 if not visited[v]:
                     heapq.heappush(min_heap, (w, v))
             
-            return mst_weight
+        return mst_weight
 
 # 테스트 예시
 if __name__ == "__main__":
