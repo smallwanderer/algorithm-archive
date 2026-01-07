@@ -7,7 +7,7 @@
 ## 📂 Directory Structure
 ```
 algorithm-archive/
-├── algorithms/               # 알고리즘 단위 학습 허브 (핵심)
+├── algorithms/               # 알고리즘 단위 학습용 구분
 │   ├── searching/
 │   ├── sorting/
 │   ├── graph/
@@ -20,14 +20,10 @@ algorithm-archive/
 │   └── techniques/
 │
 │   └── 각 알고리즘 폴더 구조 예시:
-│       <category>/<algorithm>/
-│       ├── README.md    # 이론 요약 + 패턴 + 의사코드
-│       ├── impl/        # 구현 코드 (Python / C++ 등)
-│       └── tests/       # 알고리즘 검증용 테스트 코드
-│
-├── templates/           # 코딩테스트 실전용 템플릿 모음
-│   ├── python/
-│   └── cpp/
+│       <category>/
+│       ├── README.md             # 이론 요약 + 패턴 + 의사코드
+│       ├── <algorithm>.py        # 해당 카테고리의 알고리즘 스켈레톤 코드
+│       └── problems/             # 알고리즘 검증용 테스트 코드 (백준 문제)
 │
 ├── problems_raw/             # 플랫폼/번호 기반 원본 문제 풀이 아카이브
 │   ├── boj/
@@ -36,18 +32,6 @@ algorithm-archive/
 │
 └── notes/                    # 개인 학습 기록 및 전략
 ```
-
-## 🎯 Algorithm Structure
-✔ 알고리즘 단위 허브 구조
-
-각 알고리즘 폴더는 다음 형태를 가집니다:
-
-```
-algorithms/<category>/<algorithm>/
-├── README.md     # 이론·개념·패턴
-└── impl/         # 구현 코드
-```
-
 ✔ 문제 풀이 아카이브는 별도 보관
 
 README에서 해당 알고리즘을 이용하는 문제를 확인할 수 있습니다.
@@ -68,12 +52,9 @@ Category	설명
 
 ## 🧭 Workflow (새 알고리즘 추가 방법)
 
-1. 알고리즘 선택
-2. 디렉토리 생성 ```algorithms/<category>/<algorithm>/{impl,tests}```
-3. README.md 작성
-4. 구현 코드 작성
-5. 관련 문제 링크 추가 (problems_raw/ 기준)
-6. 필요한 경우 templates 업데이트
+1. 카테고리 선택
+2. 문제 선택
+3. 해당 문제를 해결하는데 이용되는 알고리즘 정리
 
 ## 🚀 Goal
 
