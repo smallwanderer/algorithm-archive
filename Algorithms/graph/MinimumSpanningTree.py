@@ -38,6 +38,7 @@ class UnionFind:
         return True
 
 
+# 간선 정렬 필요함
 def kruskal(n: int, edges: List[Tuple[int, int, int]]) -> List[Tuple[int, int, int]]:
     """
     Kruskal's Algorithm - O(E log E)
@@ -62,6 +63,7 @@ def kruskal(n: int, edges: List[Tuple[int, int, int]]) -> List[Tuple[int, int, i
     return mst
 
 
+# 간선 정렬 필요하지 않음
 def prim(n: int, graph: List[List[Tuple[int, int]]]) -> List[Tuple[int, int, int]]:
     """
     Prim's Algorithm - O(E log V)
