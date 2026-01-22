@@ -23,19 +23,16 @@ algorithm-archive/
 │       <category>/
 │       ├── README.md             # 이론 요약 + 패턴 + 의사코드
 │       ├── <algorithm>.py        # 해당 카테고리의 알고리즘 스켈레톤 코드
-│       └── problems/             # 알고리즘 검증용 테스트 코드 (백준 문제)
+│       └── problems/             # 실전 문제
 │
-├── problems_raw/             # 플랫폼/번호 기반 원본 문제 풀이 아카이브
-│   ├── boj/
-│   ├── programmers/
-│   └── leetcode/
+├── DataStructure/             # 플랫폼/번호 기반 원본 문제 풀이 아카이브
+│   ├── linear/                # 배열, 큐, 스택등과 같은 자료구조
+│   └── tree/                  # 트리, 힙 등
 │
 └── notes/                    # 개인 학습 기록 및 전략
 ```
 ✔ 문제 풀이 아카이브는 별도 보관
 
-README에서 해당 알고리즘을 이용하는 문제를 확인할 수 있습니다.
-problems_raw/에는 원본 문제 풀이를 플랫폼 기준으로 그대로 보관합니다.
 
 
 ## 📘 Categories
