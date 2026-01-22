@@ -24,19 +24,19 @@ class CompleteBinaryTree:
 
     def getParent(self, index):
         if index <= 1 or index > self.size:
-            return None
+            return -1
         return index // 2
     
     def getLeftChild(self, index):
         left_index = index * 2
         if left_index > self.size:
-            return None
+            return -1
         return left_index
     
     def getRightChild(self, index):
         right_index = index * 2 + 1
         if right_index > self.size:
-            return None
+            return -1
         return right_index
 
     
